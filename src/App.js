@@ -7,7 +7,7 @@ import MovieList from './components/movieList/movieList';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/IMDB_clone'>
         <Header />
         <Routes>
           <Route index element={<Home />}></Route>
