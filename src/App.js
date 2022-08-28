@@ -10,7 +10,7 @@ function App() {
       <Router >
         <Header />
         <Routes>
-          <Route path ="/" element={<Home />}></Route>
+          <Route path ="/" exact element={<Home />}></Route>
           <Route path ="movie/:id" element = {<Movie />}></Route>
           <Route path ="movies/:type" element = {<MovieList />}></Route>
           <Route path ="/*" element = {<h1>error page</h1>}></Route>
