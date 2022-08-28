@@ -2,7 +2,7 @@
   "name": "imdb",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://noob-sumit.github.io",
+  "homepage": "https://noob-sumit.github.io/IMDB_clone",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",
