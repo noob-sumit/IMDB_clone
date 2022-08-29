@@ -4,19 +4,21 @@ import Header from './components/header/Header';
 import Home from './pages/home/home';
 import Movie from './pages/movieDetails/movie';
 import MovieList from './components/movieList/movieList';
-function App() {
+function App()  {
   return (
+   
     <div className="App">
-      <Router basename='/IMDB_clone' >
+      <Router basename="/IMDB_clone" >
         <Header />
         <Routes>
-          <Route path='/' element={<Home />}></Route>
+          <Route path="/IMDB_clone" element={<Home />}></Route>
           <Route path ="movie/:id" element = {<Movie />}></Route>
           <Route path ="movies/:type" element = {<MovieList />}></Route>
-          <Route path ="/*" element = {<h1>error page</h1>}></Route>
+          <Route path ="/*" element = {<Home />}></Route>
         </Routes>
       </Router>
     </div>
+    
   );
 }
 
